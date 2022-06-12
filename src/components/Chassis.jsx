@@ -1,6 +1,6 @@
 import { useBox } from "@react-three/cannon";
 import React, { forwardRef } from "react";
-import { OrbitControls,PerspectiveCamera } from "@react-three/drei"
+import { PerspectiveCamera } from "@react-three/drei"
 
 const Chassis = forwardRef(({args = [1.3, 0.1, 4],mass=500,...props},ref) => {
 

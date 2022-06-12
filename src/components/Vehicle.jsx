@@ -2,7 +2,7 @@ import { useRaycastVehicle } from "@react-three/cannon";
 import React, { useRef } from "react";
 import Chassis from "./Chassis";
 import Wheel from "./Wheele";
-import {useFrame,Camera} from '@react-three/fiber'
+import {useFrame} from '@react-three/fiber'
 import { useControls } from "../utils/controls";
 
 const Vehicle = ({ radius = 0.4, height = -0.04, width = 1.2 ,force=2000,steer=0.65,maxBrake=1,...props}) => {
@@ -12,7 +12,6 @@ const Vehicle = ({ radius = 0.4, height = -0.04, width = 1.2 ,force=2000,steer=0
     const wheel2 = useRef()
     const wheel3 = useRef()
     const wheel4 = useRef()
-    const camera = useRef()
     const controls = useControls()
 
     const wheelInfos = {

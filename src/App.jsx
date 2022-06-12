@@ -1,10 +1,9 @@
 import './App.css';
-import { Debug, Physics } from '@react-three/cannon';
-import {PerspectiveCamera} from '@react-three/drei'
+import {  Physics } from '@react-three/cannon';
 import { Canvas } from '@react-three/fiber';
 import Plane from './components/Plane';
 import React,{ Suspense } from 'react';
-import { OrbitControls, Environment } from '@react-three/drei'
+import {  Environment } from '@react-three/drei'
 import Vehicle from './components/Vehicle';
 
 function App() {
